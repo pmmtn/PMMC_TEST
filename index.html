@@ -408,42 +408,21 @@ nav {
 .memoji-card-new {
   position: relative;
   z-index: 2;
-  width: 370px;
-  height: 455px;
+  width: 400px;
+  height: 500px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   overflow: visible;
 }
 
-.memoji-card-new::after {
-  content: "";
-  position: absolute;
-  left: -18%;
-  right: -18%;
-  bottom: -34px;
-  height: 135px;
-  pointer-events: none;
-  z-index: 6;
-  background:
-    radial-gradient(
-      ellipse at center bottom,
-      rgba(245,245,247,0.95) 0%,
-      rgba(245,245,247,0.72) 32%,
-      rgba(245,245,247,0.36) 62%,
-      rgba(245,245,247,0) 100%
-    );
-  filter: blur(8px);
-}
-   
 .memoji-img-new {
-  width: 110%;
-  height: 110%;
+  width: 122%;
+  height: 122%;
   object-fit: contain;
   object-position: bottom center;
-  filter: drop-shadow(0 14px 28px rgba(0,0,0,0.10));
-  position: relative;
-  z-index: 2;
+  filter: drop-shadow(0 18px 36px rgba(0,0,0,0.12));
+  transform: translateY(-14px);
 }
 
 .soft-float-card {
