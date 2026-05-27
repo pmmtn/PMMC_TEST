@@ -422,37 +422,44 @@ nav {
 
 .soft-float-card {
   position: absolute;
-  z-index: 1;
-  width: 190px;
-  height: 62px;
-  border-radius: 22px;
-  background: rgba(255,255,255,0.62);
-  border: 1px solid rgba(255,255,255,0.76);
+  z-index: 3;
+  min-height: 62px;
+  padding: 0 28px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.78);
+  border: 1px solid rgba(255,255,255,0.82);
   box-shadow: 0 18px 44px rgba(0,0,0,0.08), inset 0 1px 0 rgba(255,255,255,0.8);
   backdrop-filter: blur(24px) saturate(180%);
   -webkit-backdrop-filter: blur(24px) saturate(180%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-2);
+  letter-spacing: -0.01em;
 }
 
 .soft-card-1 {
-  top: 42px;
-  right: 6px;
+  top: 44px;
+  right: -8px;
   animation: softFloatA 5.5s ease-in-out infinite;
 }
 
 .soft-card-2 {
-  left: -42px;
-  top: 255px;
-  width: 170px;
+  left: -76px;
+  top: 312px;
   animation: softFloatB 6s ease-in-out infinite;
 }
 
 .soft-card-3 {
-  right: -4px;
-  bottom: 72px;
-  width: 165px;
+  right: -34px;
+  top: 255px;
   animation: softFloatA 6.5s ease-in-out infinite 0.5s;
 }
-
+   
 @keyframes softFloatA {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-8px); }
@@ -1523,9 +1530,10 @@ footer a:hover { color: var(--red); }
         </div>
       </div>
 
-      <div class="soft-float-card soft-card-1"></div>
-      <div class="soft-float-card soft-card-2"></div>
-      <div class="soft-float-card soft-card-3"></div>
+      <div class="soft-float-card soft-card-1">Global Creative Design Lead opportunity</div>
+      <div class="soft-float-card soft-card-2">4 years at Symrise</div>
+      <div class="soft-float-card soft-card-3">Brand &amp; Visual Systems</div>
+      <div class="soft-float-card soft-card-4">Corporate Communications</div>
     </div>
 
   </section>
