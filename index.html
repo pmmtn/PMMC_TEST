@@ -390,11 +390,10 @@ nav {
   display: inline-block;
   width: 10px;
   height: 10px;
-  margin-left: 6px;
+  margin-left: 3px;
   border-radius: 50%;
   background: var(--red);
-  vertical-align: baseline;
-  transform: translateY(-2px);
+  vertical-align: 0.03em;
 }
 
 .hero-visual-new {
@@ -443,6 +442,8 @@ nav {
   object-position: bottom center;
   filter: drop-shadow(0 18px 36px rgba(0,0,0,0.12));
   transform: translateY(-12px);
+  position: relative;
+  z-index: 2;
 }
 
 .soft-float-card {
