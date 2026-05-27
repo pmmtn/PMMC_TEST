@@ -415,21 +415,24 @@ nav {
 .memoji-card-new::after {
   content: "";
   position: absolute;
-  left: -8%;
-  right: -8%;
-  bottom: -2px;
-  height: 120px;
+  left: -22%;
+  right: -22%;
+  bottom: -18px;
+  height: 190px;
   pointer-events: none;
-  background: linear-gradient(
-    to bottom,
-    rgba(245,245,247,0) 0%,
-    rgba(245,245,247,0.45) 45%,
-    rgba(245,245,247,0.82) 72%,
-    rgba(245,245,247,1) 100%
-  );
-  z-index: 3;
+  z-index: 6;
+  background:
+    radial-gradient(
+      ellipse at center bottom,
+      rgba(245,245,247,1) 0%,
+      rgba(245,245,247,0.96) 28%,
+      rgba(245,245,247,0.72) 52%,
+      rgba(245,245,247,0.28) 76%,
+      rgba(245,245,247,0) 100%
+    );
+  filter: blur(10px);
 }
-
+   
 .memoji-img-new {
   width: 106%;
   height: 106%;
@@ -484,7 +487,7 @@ nav {
   right: -10px;
   top: 330px; /* bien plus bas */
   width: 220px;
-  z-index: 5; /* devant le Memoji */
+  z-index: 8; /* devant le Memoji */
   animation: softFloatA 6.5s ease-in-out infinite 0.5s;
 }
    
